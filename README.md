@@ -1,109 +1,106 @@
-🔬 Cancer Diagnosis using Machine Learning
-📌 Project Overview
+# 🔬 Cancer Diagnosis using Machine Learning
 
-This project focuses on cancer diagnosis prediction using machine learning techniques applied to structured medical data.
-The main objective is to analyze tumor features and classify cases as benign or malignant, demonstrating a complete data science workflow from data exploration to model-ready preprocessing.
+## 📌 Project Overview
+This project focuses on **cancer diagnosis prediction** using classical machine learning techniques applied to structured medical data.  
+The objective is to classify tumors as **benign or malignant** based on diagnostic measurements, demonstrating a complete and reproducible **data science workflow**.
 
-This project is designed as a portfolio-grade academic and professional project, suitable for:
+This project is designed as a **portfolio-grade, dual-purpose project**, suitable for:
+- Master’s degree applications
+- Research-oriented academic programs
+- Data Science / Machine Learning internships and junior roles
 
-Master’s applications
+---
 
-Research-oriented programs
+## 📊 Dataset Description
+The dataset contains numerical features extracted from medical diagnostic examinations.
 
-Data science / ML internships and junior roles
+**Target variable:**
+- Cancer diagnosis (Benign / Malignant)
 
-📊 Dataset Description
+**Feature categories include:**
+- Radius, texture, perimeter, area
+- Smoothness and compactness
+- Concavity, concave points, symmetry
 
-The dataset consists of numerical features extracted from medical diagnostic measurements.
+All features are numerical and suitable for classical machine learning models.
 
-Target variable:
+---
 
-Cancer diagnosis (Benign / Malignant)
+## 🔍 Exploratory Data Analysis (EDA)
+Exploratory analysis was conducted to understand feature distributions and relationships.
 
-Feature categories include:
+Key insights:
+- Strong correlation between size-related features and malignancy
+- Certain texture and concavity features show high discriminative power
+- The dataset is well-structured and suitable for binary classification
 
-Radius, texture, perimeter, area
+EDA helped guide model selection and preprocessing decisions.
 
-Smoothness, compactness
+---
 
-Concavity and symmetry-related measurements
+## 🧠 Machine Learning Workflow
+The following steps were implemented in the notebook:
 
-All features are numeric and suitable for classical machine learning models.
+- Data loading and cleaning
+- Feature-target separation
+- Train-test split with stratification
+- Feature scaling using StandardScaler
+- Training multiple classification models
+- Model evaluation and comparison
 
-🔍 Exploratory Data Analysis (EDA)
+This workflow ensures **clarity, reproducibility, and scalability**.
 
-Key analysis steps performed:
+---
 
-Statistical summary of features
+## 📊 Model Comparison & Evaluation
+Three classification models were trained and evaluated:
 
-Distribution analysis
+- Logistic Regression (baseline)
+- Support Vector Machine (RBF kernel)
+- Random Forest Classifier
 
-Correlation inspection between features
+**Evaluation metrics:**
+- Accuracy
+- Precision, Recall, F1-score
+- Confusion Matrix
+- ROC Curve & AUC
 
-Identification of discriminative variables
+Among the tested models, **Random Forest achieved the highest overall performance and robustness**, making it the most reliable classifier for this dataset.
 
-EDA insights help understand:
+---
 
-Which features contribute most to malignancy
+## 🛠️ Tools & Technologies
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook / Kaggle Notebook
 
-Feature redundancy and correlation
+---
 
-Model readiness of the dataset
+## 🎯 Why This Project Matters
+This project demonstrates:
+- Practical application of machine learning in healthcare
+- Strong understanding of exploratory data analysis
+- Proper use of evaluation metrics for classification problems
+- Ability to build clean, reproducible ML pipelines
 
-🧠 Machine Learning Workflow
+It reflects both **academic readiness** and **industry-oriented problem solving**.
 
-The notebook demonstrates a clean and structured ML pipeline, including:
+---
 
-Data loading and cleaning
+## 🚀 Future Improvements
+- Hyperparameter tuning and cross-validation
+- Feature selection and dimensionality reduction
+- Comparison with additional models
+- Deployment-ready pipeline preparation
 
-Feature selection
+---
 
-Train-test split
-
-Model preparation (classification-ready)
-
-This design ensures clarity, reproducibility, and scalability for future research or deployment.
-
-🛠️ Tools & Technologies
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
-Scikit-learn
-
-Jupyter Notebook / Kaggle Notebook
-
-🎯 Why This Project Matters
-
-This project showcases:
-
-Strong understanding of medical data analysis
-
-Practical application of machine learning to healthcare
-
-Ability to communicate insights clearly through code and visuals
-
-Readiness for academic research and industry-level ML tasks
-
-🚀 Future Improvements
-
-Train multiple classifiers (Logistic Regression, SVM, Random Forest)
-
-Model comparison and evaluation metrics (ROC, AUC, F1-score)
-
-Feature scaling and dimensionality reduction
-
-Hyperparameter tuning and cross-validation
-
-👤 Author
-
-Mohamad Nahvi
-Aspiring Data Scientist | Machine Learning Enthusiast
+## 👤 Author
+**Mohamad Nahvi**  
+Aspiring Data Scientist | Machine Learning Enthusiast  
 
 
 
@@ -177,4 +174,5 @@ Academic coursework and portfolio projects
 📜 License
 
 This dataset is shared for educational and research purposes.
+
 Please cite the repository if used in academic or professional work.
